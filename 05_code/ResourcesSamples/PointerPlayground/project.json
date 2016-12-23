@@ -2,13 +2,20 @@
   "version": "1.0.0-*",
   "buildOptions": {
     "emitEntryPoint": true,
-    "allowUnsafe": true
+    "allowUnsafe": true,
+    "define": [ "DEBUG" ]
+  },
+
+  "compilationOptions": {
+    "emitEntryPoint": true,
+    "allowUnsafe": true,
+    "define": [ "DEBUG" ]
   },
 
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
-      "version": "1.0.0-rc2-3002702"
+      "version": "1.0.1"
     }
   },
 
@@ -16,5 +23,8 @@
     "netcoreapp1.0": {
       "imports": "dnxcore50"
     }
+  },
+  "configurations": {
+    "Build": {}
   }
 }

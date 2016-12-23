@@ -17,8 +17,10 @@ namespace Wrox.ProCSharp.Generics
       }
       else
       {
-        Last.Next = newNode;
-        Last = newNode;
+                LinkedListNode previous = Last;
+                Last.Next = newNode;
+                Last = newNode;
+                Last.Prev = previous;
       }
       return newNode;
     }
